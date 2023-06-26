@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="MealPackageReceptionistContext" prefHeight="486.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MealPackageReceptionistFormController">
+   <children>
+      <ImageView fitHeight="486.0" fitWidth="866.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/pexels-chan-walrus-941861.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="colPrice" layoutX="56.0" layoutY="106.0" prefHeight="354.0" prefWidth="721.0">
+        <columns>
+          <TableColumn fx:id="colPerson" prefWidth="134.0" text="Person" />
+          <TableColumn fx:id="colType" prefWidth="197.0" text="Type" />
+            <TableColumn fx:id="colAvailability" prefWidth="207.0" text="Availability" />
+            <TableColumn prefWidth="182.0" text="Price" />
+        </columns>
+      </TableView>
+      <Label layoutX="236.0" layoutY="21.0" prefHeight="58.0" prefWidth="343.0" text="Meal Pakages" textFill="#eba5a5">
+         <font>
+            <Font name="Cooper Black" size="48.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="38.0" layoutY="21.0" onAction="#backToReceptionistDashBoardForm" prefHeight="40.0" prefWidth="98.0" style="-fx-background-color: #b2bec3;" text="Back">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

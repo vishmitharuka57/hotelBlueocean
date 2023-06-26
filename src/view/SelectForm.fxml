@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="487.0" prefWidth="723.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SelectFormController">
+   <children>
+      <ImageView fitHeight="510.0" fitWidth="771.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/beautiful-outdoor-infinity-swimming-pool-hotel-resort-with-sea-ocean-view-white-cloud-blue-sky_74190-9030.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="113.0" layoutY="29.0" prefHeight="79.0" prefWidth="541.0" text="Select who you are?">
+         <font>
+            <Font name="Cooper Black" size="52.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.9761904761904762" startX="0.04285714285714286" startY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="BLACK" offset="0.007662835249042145" />
+                  <Stop color="#2c63a1" offset="0.08429118773946355" />
+                  <Stop color="BLACK" offset="0.2875143184421532" />
+                  <Stop color="#2d63a1" offset="0.4455504206659554" />
+                  <Stop color="BLACK" offset="0.6151597740648564" />
+                  <Stop color="#2c64a0" offset="0.6681676343958605" />
+                  <Stop color="BLACK" offset="0.7739463601532567" />
+                  <Stop color="#2c64a0" offset="0.8618714697634001" />
+                  <Stop color="BLACK" offset="0.9770114942528734" />
+                  <Stop color="#080436" offset="0.9961685823754789" />
+                  <Stop color="#080436" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="33.0" layoutY="146.0" onAction="#openAdminForm" prefHeight="57.0" prefWidth="243.0" ripplerFill="#78bff1" style="-fx-background-color: #0984e3;" text="Admin" textFill="#010107">
+         <font>
+            <Font name="Cooper Black" size="33.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="34.0" layoutY="274.0" onAction="#openReceptionistForm" prefHeight="57.0" prefWidth="243.0" ripplerFill="#78bff1" style="-fx-background-color: #0984e3;" text="Receptionist">
+         <font>
+            <Font name="Cooper Black" size="31.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="34.0" layoutY="468.0" onAction="#backToDashBoardForm" prefHeight="40.0" prefWidth="98.0" style="-fx-background-color: #b2bec3;" text="Back">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font></JFXButton>
+      <AnchorPane fx:id="selectFormContext" layoutX="304.0" layoutY="114.0" prefHeight="320.0" prefWidth="448.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="322.0" fitWidth="325.0" layoutX="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/istockphoto-1073597004-170667a.jpg" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

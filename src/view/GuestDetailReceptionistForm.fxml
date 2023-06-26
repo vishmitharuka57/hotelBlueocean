@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="584.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GuestDetailReceptionistFormController">
+   <children>
+      <ImageView fx:id="GuestDetailContext" fitHeight="622.0" fitWidth="1040.0" layoutX="-30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/happy-guests.png" />
+         </image></ImageView>
+      <Label alignment="CENTER" layoutY="24.0" prefHeight="73.0" prefWidth="1011.0" text="Guest Detail">
+         <font>
+            <Font name="Cooper Black" size="42.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="BLACK" offset="0.12260536398467432" />
+                  <Stop color="#8d0e0e" offset="0.325670498084291" />
+                  <Stop color="#8c0f0f" offset="0.7800292293715684" />
+                  <Stop color="BLACK" offset="0.8324051032902793" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <TableView layoutX="53.0" layoutY="244.0" prefHeight="297.0" prefWidth="902.0">
+        <columns>
+          <TableColumn fx:id="colName" prefWidth="163.0" text="Name" />
+          <TableColumn fx:id="colId" prefWidth="149.0" text="Id" />
+            <TableColumn fx:id="colRoomType" prefWidth="172.0" text="Room Type" />
+            <TableColumn fx:id="colCheckIn" prefWidth="217.0" text="Check In" />
+            <TableColumn fx:id="colCheckOut" prefWidth="200.0" text="Check Out" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="txtName" labelFloat="true" layoutX="53.0" layoutY="102.0" prefHeight="28.0" prefWidth="185.0" promptText="Name" />
+      <JFXTextField fx:id="TxtCheckIn" labelFloat="true" layoutX="745.0" layoutY="116.0" prefHeight="28.0" prefWidth="185.0" promptText="Check In" />
+      <JFXTextField fx:id="txtRoomType" labelFloat="true" layoutX="524.0" layoutY="102.0" prefHeight="28.0" prefWidth="185.0" promptText="Room Type" />
+      <JFXTextField fx:id="txtId" labelFloat="true" layoutX="281.0" layoutY="102.0" prefHeight="28.0" prefWidth="185.0" promptText="Id" />
+      <JFXTextField fx:id="TxtCheckOut" labelFloat="true" layoutX="45.0" layoutY="168.0" prefHeight="28.0" prefWidth="185.0" promptText="Check Out" />
+      <JFXButton fx:id="btnSaveAndUpdate" layoutX="842.0" layoutY="170.0" onAction="#saveGuestDetail" prefHeight="42.0" prefWidth="114.0" style="-fx-background-color: #ffaaaa;" text="Save">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="32.0" layoutY="24.0" onAction="#backToReceptionistDashBoardForm" prefHeight="42.0" prefWidth="114.0" style="-fx-background-color: #645e5e;" text="Back">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

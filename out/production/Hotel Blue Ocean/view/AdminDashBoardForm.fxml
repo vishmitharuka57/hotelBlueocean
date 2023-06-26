@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="adminDashboardcontext" prefHeight="546.0" prefWidth="372.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminDashBoardFormController">
+   <children>
+      <ImageView fitHeight="561.0" fitWidth="420.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/pexels-michael-block-3225531.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="101.0" layoutY="162.0" onAction="#openMealPlan" opacity="0.9" prefHeight="57.0" prefWidth="228.0" ripplerFill="#f1c753" style="-fx-background-color: #ffeaa7;" text="Meal Plan" textFill="#434343">
+         <font>
+            <Font name="Cooper Black" size="24.0" />
+         </font>
+       </JFXButton>
+      <JFXButton layoutX="101.0" layoutY="259.0" onAction="#OpenRoomPlan" opacity="0.9" prefHeight="57.0" prefWidth="228.0" ripplerFill="#f1c753" style="-fx-background-color: #ffeaa7;" text="Rooms" textFill="#434343">
+         <font>
+            <Font name="Cooper Black" size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="101.0" layoutY="355.0" onAction="#openIncomeReport" opacity="0.9" prefHeight="57.0" prefWidth="228.0" ripplerFill="#f1c753" style="-fx-background-color: #ffeaa7;" text="Income Report" textFill="#434343">
+         <font>
+            <Font name="Cooper Black" size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="44.0" layoutY="478.0" onAction="#backToAdminForm" prefHeight="40.0" prefWidth="98.0" style="-fx-background-color: #b2bec3;" text="Back">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

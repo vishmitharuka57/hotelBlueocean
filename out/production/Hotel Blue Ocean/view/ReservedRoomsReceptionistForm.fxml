@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="roomReservationReceptionistContext" prefHeight="515.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReservedRoomsReceptionistFormController">
+   <children>
+      <ImageView fitHeight="528.0" fitWidth="780.0" opacity="0.88" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/pexels-elina-sazonova-1838554.jpg" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="162.0" layoutY="32.0" prefHeight="68.0" prefWidth="469.0" text="Room Reservation">
+         <font>
+            <Font name="Cooper Black" size="49.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#239dc3" />
+                  <Stop color="#30afbf" offset="0.24311727297863095" />
+                  <Stop color="WHITE" offset="0.9157088122605364" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="104.0" layoutY="129.0" prefHeight="37.0" prefWidth="211.0" text="Guest Details" textFill="#0d0000" underline="true">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="435.0" layoutY="129.0" prefHeight="37.0" prefWidth="211.0" text="Guest Details" textFill="#0d0000" underline="true">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtName" labelFloat="true" layoutX="70.0" layoutY="185.0" opacity="0.85" prefHeight="39.0" prefWidth="296.0" promptText="Name :" style="-fx-background-color: #dfe6e9;" unFocusColor="#ddd2d2">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtNic" labelFloat="true" layoutX="70.0" layoutY="241.0" opacity="0.85" prefHeight="39.0" prefWidth="296.0" promptText="NIC Number :" style="-fx-background-color: #dfe6e9;" unFocusColor="#dacbcb">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtTelephone" labelFloat="true" layoutX="70.0" layoutY="292.0" opacity="0.85" prefHeight="39.0" prefWidth="296.0" promptText="Telephone :" style="-fx-background-color: #dfe6e9;" unFocusColor="#e4cece">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtEmail" labelFloat="true" layoutX="70.0" layoutY="350.0" opacity="0.85" prefHeight="39.0" prefWidth="296.0" promptText="Email :" style="-fx-background-color: #dfe6e9;" unFocusColor="#d7d3d3">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAddress" labelFloat="true" layoutX="70.0" layoutY="410.0" opacity="0.85" prefHeight="37.0" prefWidth="296.0" promptText="Address :" style="-fx-background-color: #dfe6e9;" unFocusColor="#c6bcbc">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXTextField>
+      <Separator layoutX="393.0" layoutY="129.0" orientation="VERTICAL" prefHeight="344.0" prefWidth="0.0" />
+      <JFXTextField fx:id="txtRoomType" labelFloat="true" layoutX="412.0" layoutY="192.0" opacity="0.85" prefHeight="39.0" prefWidth="296.0" promptText="Room Type :" style="-fx-background-color: #dfe6e9;" unFocusColor="#ddd2d2">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtRoomNumber" labelFloat="true" layoutX="412.0" layoutY="253.0" opacity="0.85" prefHeight="39.0" prefWidth="296.0" promptText="Room Number :" style="-fx-background-color: #dfe6e9;" unFocusColor="#ddd2d2">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCheckIn" labelFloat="true" layoutX="412.0" layoutY="312.0" opacity="0.85" prefHeight="39.0" prefWidth="296.0" promptText="Check in :" style="-fx-background-color: #dfe6e9;" unFocusColor="#ddd2d2">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCheckOut" labelFloat="true" layoutX="410.0" layoutY="370.0" opacity="0.85" prefHeight="39.0" prefWidth="296.0" promptText="Check out :" style="-fx-background-color: #dfe6e9;" unFocusColor="#ddd2d2">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="551.0" layoutY="461.0" onAction="#SaveDetailsBtn" prefHeight="39.0" prefWidth="167.0" style="-fx-background-color: #ffeaa7;" text="Save &amp; Booking" textFill="#0d0606">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="32.0" layoutY="461.0" onAction="#backToReceptionistDashBoard" prefHeight="39.0" prefWidth="167.0" style="-fx-background-color: #fab1a0;" text="Back" textFill="#0d0606">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="adminFormContext" prefHeight="320.0" prefWidth="448.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminFormController">
+   <children>
+      <ImageView fitHeight="339.0" fitWidth="455.0" layoutX="-1.0" opacity="0.64" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/isometric-flat-vector-concept-online-exam-questionnaire-form-online-education-survey-internet-quiz-survey-exam-form-long-126725385.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="71.0" layoutY="18.0" prefHeight="45.0" prefWidth="232.0" text="Admin Form">
+         <font>
+            <Font name="Cooper Black" size="25.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#173e79" />
+                  <Stop color="#173e79" offset="0.22988505747126436" />
+                  <Stop color="BLACK" offset="0.49290990243709765" />
+                  <Stop color="#173e78" offset="0.799067820041869" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <JFXTextField fx:id="txtPasswordS" labelFloat="true" layoutX="82.0" layoutY="201.0" opacity="0.88" prefHeight="33.0" prefWidth="309.0" promptText="Password" style="-fx-background-color: #dfe6e9;" />
+      <JFXTextField fx:id="txtUsername" labelFloat="true" layoutX="82.0" layoutY="139.0" opacity="0.77" prefHeight="33.0" prefWidth="309.0" promptText="Username" style="-fx-background-color: #dfe6e9;" />
+      <ImageView fitHeight="33.0" fitWidth="32.0" layoutX="361.0" layoutY="139.0" opacity="0.91" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/user-login-icon-vector-21078997.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="33.0" fitWidth="32.0" layoutX="361.0" layoutY="201.0" opacity="0.91" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/user-login-icon-vector-21078997.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" defaultButton="true" layoutX="321.0" layoutY="286.0" onAction="#openAdminPage" style="-fx-background-color: #ffaaaa;" text="Continue">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Glow />
+         </effect>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" defaultButton="true" layoutX="54.0" layoutY="286.0" onAction="#backToSelectForm" style="-fx-background-color: #636e72;" text="Back">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Glow />
+         </effect>
+      </JFXButton>
+   </children>
+</AnchorPane>

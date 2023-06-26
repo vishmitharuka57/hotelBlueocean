@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="RoomPackageAdminContext" prefHeight="574.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RoomsAdminFormController">
+   <children>
+      <ImageView fitHeight="606.0" fitWidth="883.0" layoutX="-33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/pexels-pixabay-271672.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="30.0" layoutY="32.0" prefHeight="67.0" prefWidth="651.0" text="Room Package" textFill="#272c0b">
+         <font>
+            <Font name="Cooper Black" size="63.0" />
+         </font>
+      </Label>
+      <TableView layoutX="72.0" layoutY="220.0" prefHeight="303.0" prefWidth="742.0">
+        <columns>
+          <TableColumn prefWidth="110.0" text="Room No." />
+          <TableColumn prefWidth="162.0" text="Type" />
+            <TableColumn prefWidth="170.0" text="Availability" />
+            <TableColumn prefWidth="153.0" text="Modify" />
+            <TableColumn prefWidth="146.0" text="Delete" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="txtRoomNo" labelFloat="true" layoutX="59.0" layoutY="122.0" promptText="Room no.">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtRoomType" labelFloat="true" layoutX="288.0" layoutY="122.0" prefHeight="25.0" prefWidth="188.0" promptText="Type">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtRoomAvailability" labelFloat="true" layoutX="589.0" layoutY="122.0" prefHeight="25.0" prefWidth="203.0" promptText="Availability">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXButton layoutX="72.0" layoutY="169.0" onAction="#AddRoomPackages" prefHeight="41.0" prefWidth="92.0" ripplerFill="#615d97" style="-fx-background-color: #a29bfe;" text="Add">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="700.0" layoutY="534.0" onAction="#backToAdminDashBoard" prefHeight="41.0" prefWidth="92.0" ripplerFill="#a0a8ab" style="-fx-background-color: #636e72;" text="Back">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

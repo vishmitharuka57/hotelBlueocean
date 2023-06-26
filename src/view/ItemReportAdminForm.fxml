@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="incomeReportAdminContext" prefHeight="580.0" prefWidth="817.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ItemReportAdminFormController">
+   <children>
+      <ImageView fitHeight="622.0" fitWidth="869.0" layoutX="-88.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/istockphoto-849046214-612x612.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="145.0" layoutY="14.0" prefHeight="85.0" prefWidth="514.0" text="Income Report">
+         <font>
+            <Font name="Cooper Black" size="40.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="BLACK" offset="0.007662835249042145" />
+                  <Stop color="#e41899" offset="0.26053639846743293" />
+                  <Stop color="BLACK" offset="0.45404273808113116" />
+                  <Stop color="BLACK" offset="0.576411107161196" />
+                  <Stop color="#e31999" offset="0.7300628036497214" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="27.0" layoutY="88.0" prefHeight="35.0" prefWidth="236.0" text="Hotel name : Hotel Blue Ocean">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="135.0" prefHeight="35.0" prefWidth="304.0" text="Period covered : 2022..09.01 - 2022.10.01">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="368.0" layoutY="88.0" prefHeight="35.0" prefWidth="223.0" text="Prepared date : 2022.10.02">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="365.0" layoutY="123.0" prefHeight="35.0" prefWidth="223.0" text="Prepared By : Vishmi Tharuka">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="40.0" layoutY="507.0" onAction="#backToAdminDashBoardForm" prefHeight="43.0" prefWidth="118.0" style="-fx-background-color: #636e72;" text="Back">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="406.0" fitWidth="344.0" layoutX="179.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/finance.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

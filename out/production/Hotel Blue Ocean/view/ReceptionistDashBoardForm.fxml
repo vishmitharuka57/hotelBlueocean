@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="receptionistDashboardContext" prefHeight="552.0" prefWidth="362.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReceptionistDashBoardFormController">
+   <children>
+      <ImageView fitHeight="552.0" fitWidth="374.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/pexels-evgenia-basyrova-5028910.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="60.0" layoutY="85.0" onAction="#openDashBoardPage" opacity="0.94" prefHeight="48.0" prefWidth="250.0" style="-fx-background-color: #fab1a0;" text="DashBoard">
+         <font>
+            <Font name="Cooper Black" size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="61.0" layoutY="167.0" onAction="#openReservedRoomPage" opacity="0.94" prefHeight="48.0" prefWidth="250.0" style="-fx-background-color: #fab1a0;" text="Reserved Rooms">
+         <font>
+            <Font name="Cooper Black" size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="61.0" layoutY="242.0" onAction="#openGuestdetailPage" opacity="0.94" prefHeight="48.0" prefWidth="250.0" style="-fx-background-color: #fab1a0;" text="Guest Details">
+         <font>
+            <Font name="Cooper Black" size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="61.0" layoutY="326.0" onAction="#openMealPlanPage" opacity="0.94" prefHeight="48.0" prefWidth="250.0" style="-fx-background-color: #fab1a0;" text="Meal  Package">
+         <font>
+            <Font name="Cooper Black" size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="61.0" layoutY="404.0" onAction="#openRoomPlanPage" opacity="0.94" prefHeight="48.0" prefWidth="250.0" style="-fx-background-color: #fab1a0;" text="Room Plan">
+         <font>
+            <Font name="Cooper Black" size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="32.0" layoutY="488.0" onAction="#backToReceptionistForm" prefHeight="40.0" prefWidth="98.0" style="-fx-background-color: #b2bec3;" text="Back">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

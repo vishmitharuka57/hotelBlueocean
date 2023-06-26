@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="RoomPlanReceptionistContext" prefHeight="501.0" prefWidth="741.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RoomPlanReceptionistFormController">
+   <children>
+      <ImageView fitHeight="507.0" fitWidth="763.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/pexels-photomix-company-97083.jpg" />
+         </image>
+      </ImageView>
+      <TableView layoutX="51.0" layoutY="207.0" prefHeight="286.0" prefWidth="644.0">
+        <columns>
+          <TableColumn fx:id="colRoomType" prefWidth="126.0" text="Room Type" />
+          <TableColumn fx:id="colAvailability" prefWidth="151.0" text="Availability" />
+            <TableColumn fx:id="colFacilities" prefWidth="242.0" text="Facilities" />
+            <TableColumn fx:id="colPerNight" prefWidth="124.0" text="Per Night" />
+        </columns>
+      </TableView>
+      <Label layoutX="233.0" layoutY="23.0" prefHeight="63.0" prefWidth="266.0" text="Room Plans" textFill="#7c4d4d">
+         <font>
+            <Font name="Cooper Black" size="42.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtRoomType" labelFloat="true" layoutX="51.0" layoutY="96.0" prefHeight="21.0" prefWidth="205.0" promptText="Room Type" />
+      <JFXTextField fx:id="txtPerNight" labelFloat="true" layoutX="51.0" layoutY="145.0" prefHeight="21.0" prefWidth="205.0" promptText="Room Type" />
+      <JFXTextField fx:id="txtFacility" labelFloat="true" layoutX="511.0" layoutY="96.0" prefHeight="21.0" prefWidth="205.0" promptText="Facilities" />
+      <JFXTextField fx:id="txtAvailability" labelFloat="true" layoutX="271.0" layoutY="96.0" prefHeight="21.0" prefWidth="205.0" promptText="Availability" />
+      <JFXButton layoutX="562.0" layoutY="158.0" onAction="#SaveRoomPlans" prefHeight="39.0" prefWidth="123.0" style="-fx-background-color: #fbceda;" text="Save">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" defaultButton="true" layoutX="18.0" layoutY="24.0" onAction="#backToAReceptionistDashBoard" prefHeight="30.0" prefWidth="67.0" style="-fx-background-color: #636e72;" text="Back">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Glow />
+         </effect>
+      </JFXButton>
+   </children>
+</AnchorPane>
